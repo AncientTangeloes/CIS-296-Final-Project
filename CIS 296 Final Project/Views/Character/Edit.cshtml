@@ -1,0 +1,42 @@
+﻿@model Character
+@{
+    string title = ViewBag.Action + " Character";
+    ViewBag.Title = title;
+}
+
+<h2 style="color: sandybrown">@ViewBag.Title</h2>
+
+<form asp-action="Edit" method="post" style="color: sandybrown; font-weight: bold">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Origin">Origin</label>
+        <input asp-for="Origin" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="OgTypeId">Origin Type</label>
+        <select asp-for="OgTypeId" class="form-control">
+            <option value="">select a type</option>
+            @foreach (OgType t in ViewBag.OgTypes)
+            {
+                <option value="@t.OgTypeId">@t.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Year">Year</label>
+        <input asp-for="Year" class="form-control" />
+    </div>
+
+    <input type="hidden" asp-for="CharacterId" />
+
+    <button type="submit" class="btn btn-info">@ViewBag.Action</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

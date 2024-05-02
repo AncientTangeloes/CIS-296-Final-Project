@@ -2,8 +2,9 @@ using CIS_296_Final_Project.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Linq;
 
-namespace CIS_296_Final_Project.Controllers
+namespace CharacterList.Controllers
 {
     public class HomeController : Controller
     {
