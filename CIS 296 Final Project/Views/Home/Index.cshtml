@@ -1,8 +1,35 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<Character>
+@{
+    ViewBag.Title = "Sonic Characters";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<table class="table table-info table-striped" style="color: teal">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Origin</th>
+            <th>Origin Type</th>
+            <th>Year</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var character in Model)
+        {
+            <tr>
+                <td>@character.Name</td>
+                <td>@character.Origin</td>
+                <td>@character.OgType.Name</td>
+                <td>@character.Year</td>
+                <td>
+                    <a asp-controller="Character" asp-action="Edit" asp-route-id="@character.CharacterId" asp-route-slug="@character.Slug" 
+                        class="btn btn-primary">Edit</a>
+                    <a asp-controller="Game" asp-action="Delete" asp-route-id="@character.CharacterId" asp-route-slug="@character.Slug" 
+                        class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<a asp-controller="Character" asp-action="Add" class="btn btn-info">Add New Character</a>
