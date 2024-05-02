@@ -28,11 +28,14 @@ header {
     text-align: center;
 }
 
-h2, h4 {
+h2, h4, td, a, form {
     color: midnightblue;
 }
 
 form {
-    color: midnightblue;
     font-weight: bold;
+}
+
+a {
+    text-decoration: none;
 }

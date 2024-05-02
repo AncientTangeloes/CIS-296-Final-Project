@@ -3,14 +3,14 @@
     ViewBag.Title = "Sonic Characters";
 }
 
-<table class="table table-sm table-success table-striped" style="color:midnightblue">
+<table class="table table-sm table-success table-striped">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Origin</th>
-            <th>Medium</th>
-            <th>Year</th>
-            <th></th>
+            <th><a asp-action="Index" asp-route-id="1">Name</a></th>
+            <th><a asp-action="Index" asp-route-id="2">Origin</a></th>
+            <th><a asp-action="Index" asp-route-id="3">Medium</a></th>
+            <th><a asp-action="Index" asp-route-id="4">Year</a></th>
+            <th><a asp-action="Index" asp-route-id="0">Default Sort</a></th>
         </tr>
     </thead>
     <tbody>
@@ -32,4 +32,4 @@
     </tbody>
 </table>
 <br />
-<a asp-controller="Character" asp-action="Add" class="btn btn-info">Add New Character</a>
+<a asp-controller="Character" asp-action="Add" class="btn btn-info" style="color:midnightblue">Add New Character</a>

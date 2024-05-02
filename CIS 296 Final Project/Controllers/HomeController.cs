@@ -15,9 +15,31 @@ namespace CharacterList.Controllers
             context = ctx;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int id)
         {
-            var characters = context.Characters.Include(m => m.OgType).OrderBy(m => m.CharacterId).ToList();
+            var characters = context.Characters.Include(c => c.OgType).ToList();
+
+            if (id == 1)
+            {
+                characters = context.Characters.Include(c => c.OgType).OrderBy(c => c.Name).ToList();
+            }
+            else if (id == 2) 
+            {
+                characters = context.Characters.Include(c => c.OgType).OrderBy(c => c.Origin).ToList();
+            }
+            else if (id == 3)
+            {
+                characters = context.Characters.Include(c => c.OgType).OrderBy(c => c.OgType).ToList();
+            }
+            else if (id == 4)
+            {
+                characters = context.Characters.Include(c => c.OgType).OrderBy(c => c.Year).ToList();
+            }
+            else
+            {
+                characters = context.Characters.Include(c => c.OgType).OrderBy(c => c.CharacterId).ToList();
+            }
+
             return View(characters);
         }
     }
