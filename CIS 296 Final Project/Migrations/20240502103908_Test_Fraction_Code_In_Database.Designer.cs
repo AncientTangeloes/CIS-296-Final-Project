@@ -4,6 +4,7 @@ using CIS_296_Final_Project.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CIS_296_Final_Project.Migrations
 {
     [DbContext(typeof(CharacterContext))]
-    partial class CharacterContextModelSnapshot : ModelSnapshot
+    [Migration("20240502103908_Test_Fraction_Code_In_Database")]
+    partial class Test_Fraction_Code_In_Database
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -298,168 +301,8 @@ namespace CIS_296_Final_Project.Migrations
                             CharacterId = 31,
                             Name = "Caterkiller",
                             OgTypeId = "C",
-                            Origin = "Sonic the Hedgehog #1/4",
+                            Origin = "Sonic the Hedgehog #<sup>1</sup>&frasl;<sub>4</sub>",
                             Year = 1992
-                        },
-                        new
-                        {
-                            CharacterId = 32,
-                            Name = "Rotor Walrus",
-                            OgTypeId = "C",
-                            Origin = "Sonic the Hedgehog #1/4",
-                            Year = 1992
-                        },
-                        new
-                        {
-                            CharacterId = 33,
-                            Name = "Princess Sally Alicia Acorn",
-                            OgTypeId = "C",
-                            Origin = "Sonic the Hedgehog #1/4",
-                            Year = 1992
-                        },
-                        new
-                        {
-                            CharacterId = 34,
-                            Name = "Blaze the Cat",
-                            OgTypeId = "G",
-                            Origin = "Sonic Rush",
-                            Year = 2005
-                        },
-                        new
-                        {
-                            CharacterId = 35,
-                            Name = "Eggman Nega",
-                            OgTypeId = "G",
-                            Origin = "Sonic Rush",
-                            Year = 2005
-                        },
-                        new
-                        {
-                            CharacterId = 36,
-                            Name = "Sticks the Badger",
-                            OgTypeId = "S",
-                            Origin = "Sonic Boom",
-                            Year = 2014
-                        },
-                        new
-                        {
-                            CharacterId = 37,
-                            Name = "Princess Elise III",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 38,
-                            Name = "Duke of Soleanna",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 39,
-                            Name = "Duchess of Soleanna",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 40,
-                            Name = "Iblis",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 41,
-                            Name = "Mephiles the Dark",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 42,
-                            Name = "Lord Regis",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 43,
-                            Name = "Alberto Robert",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 44,
-                            Name = "Alfano",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 45,
-                            Name = "Albert Einstein",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 46,
-                            Name = "Solaris the Sun God",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 47,
-                            Name = "Aristo",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 48,
-                            Name = "Aristotle",
-                            OgTypeId = "G",
-                            Origin = "Sonic the Hedgehog (2006)",
-                            Year = 2006
-                        },
-                        new
-                        {
-                            CharacterId = 49,
-                            Name = "Antoine D'Coolette",
-                            OgTypeId = "C",
-                            Origin = "Sonic the Hedgehog #1/4",
-                            Year = 1992
-                        },
-                        new
-                        {
-                            CharacterId = 50,
-                            Name = "Bunnie D'Coolette",
-                            OgTypeId = "C",
-                            Origin = "Sonic the Hedgehog #1 (miniseries)",
-                            Year = 1993
-                        },
-                        new
-                        {
-                            CharacterId = 51,
-                            Name = "Wang the Impending",
-                            OgTypeId = "G",
-                            Origin = "Sonic Unleashed",
-                            Year = 2008
                         });
                 });
 

@@ -29,7 +29,7 @@ namespace CharacterList.Controllers
             }
             else if (id == 3)
             {
-                characters = context.Characters.Include(c => c.OgType).OrderBy(c => c.OgType).ToList();
+                characters = context.Characters.Include(c => c.OgType).OrderBy(c => c.OgType.Name).ToList();
             }
             else if (id == 4)
             {
