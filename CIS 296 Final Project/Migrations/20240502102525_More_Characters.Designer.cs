@@ -4,6 +4,7 @@ using CIS_296_Final_Project.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CIS_296_Final_Project.Migrations
 {
     [DbContext(typeof(CharacterContext))]
-    partial class CharacterContextModelSnapshot : ModelSnapshot
+    [Migration("20240502102525_More_Characters")]
+    partial class More_Characters
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -225,7 +228,7 @@ namespace CIS_296_Final_Project.Migrations
                         {
                             CharacterId = 22,
                             Name = "Mr. President",
-                            OgTypeId = "F",
+                            OgTypeId = "M",
                             Origin = "Sonic the Hedgehog: The Movie",
                             Year = 1996
                         },
@@ -233,7 +236,7 @@ namespace CIS_296_Final_Project.Migrations
                         {
                             CharacterId = 23,
                             Name = "Sara",
-                            OgTypeId = "F",
+                            OgTypeId = "M",
                             Origin = "Sonic the Hedgehog: The Movie",
                             Year = 1996
                         },
@@ -241,7 +244,7 @@ namespace CIS_296_Final_Project.Migrations
                         {
                             CharacterId = 24,
                             Name = "Metal Robotnik",
-                            OgTypeId = "F",
+                            OgTypeId = "M",
                             Origin = "Sonic the Hedgehog: The Movie",
                             Year = 1996
                         },
@@ -249,7 +252,7 @@ namespace CIS_296_Final_Project.Migrations
                         {
                             CharacterId = 25,
                             Name = "Old Man Owl",
-                            OgTypeId = "F",
+                            OgTypeId = "M",
                             Origin = "Sonic the Hedgehog: The Movie",
                             Year = 1996
                         },
@@ -257,7 +260,7 @@ namespace CIS_296_Final_Project.Migrations
                         {
                             CharacterId = 26,
                             Name = "Hyper Metal Sonic",
-                            OgTypeId = "F",
+                            OgTypeId = "M",
                             Origin = "Sonic the Hedgehog: The Movie",
                             Year = 1996
                         },
