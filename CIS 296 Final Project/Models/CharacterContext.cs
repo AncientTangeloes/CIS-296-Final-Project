@@ -76,7 +76,7 @@ namespace CIS_296_Final_Project.Models
                 new Character
                 {
                     CharacterId = 7,
-                    Name = "Doctor Ivo " + '"' + "Eggman" + '"' + "Robotnik", // - "Snooping as usual, I see."
+                    Name = "Doctor Ivo " + '"' + "Eggman" + '"' + "Robotnik", // - "Snoo pingas usual, I see."
                     Year = 1991,
                     Origin = "Sonic the Hedgehog (1991)",
                     OgTypeId = "G"
@@ -432,6 +432,150 @@ namespace CIS_296_Final_Project.Models
                     Year = 2008,
                     Origin = "Sonic Unleashed",
                     OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 52,
+                    Name = "Fang the Sniper",
+                    Year = 1994,
+                    Origin = "Sonic the Hedgehog: Triple Trouble",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 53,
+                    Name = "Mighty the Armadillo",
+                    Year = 1993,
+                    Origin = "SegaSonic the Hedgehog",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 54,
+                    Name = "Ray the Flying Squirrel",
+                    Year = 1993,
+                    Origin = "SegaSonic the Hedgehog",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 55,
+                    Name = "Cream the Rabbit",
+                    Year = 2002,
+                    Origin = "Sonic Advance 2",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 56,
+                    Name = "Cheese",
+                    Year = 2002,
+                    Origin = "Sonic Advance 2",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 57,
+                    Name = "Vanilla the Rabbit",
+                    Year = 2002,
+                    Origin = "Sonic Advance 2",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 58,
+                    Name = "Tikal",
+                    Year = 1998,
+                    Origin = "Sonic Adventure",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 59,
+                    Name = "Omochao",
+                    Year = 1998,
+                    Origin = "Sonic Adventure",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 60,
+                    Name = "Emerl",
+                    Year = 2015,
+                    Origin = "Sonic the Hedgehog #271",
+                    OgTypeId = "C"
+                },
+                new Character
+                {
+                    CharacterId = 61,
+                    Name = "Chocola",
+                    Year = 2003,
+                    Origin = "Sonic Heroes",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 62,
+                    Name = "Neo Metal Sonic",
+                    Year = 2003,
+                    Origin = "Sonic Heroes",
+                    OgTypeId = "G"
+                },
+                new Character
+                {
+                    CharacterId = 63,
+                    Name = "Maximillian Acorn",
+                    Year = 1994,
+                    Origin = "Sonic the Hedgehog #17",
+                    OgTypeId = "C"
+                },
+                new Character
+                {
+                    CharacterId = 64,
+                    Name = "Lady Alicia Acorn",
+                    Year = 1997,
+                    Origin = "Sonic Super Special #2",
+                    OgTypeId = "C"
+                },
+                new Character
+                {
+                    CharacterId = 65,
+                    Name = "King Elias Acorn of Mobius",
+                    Year = 1998,
+                    Origin = "Knuckles the Echidna #19",
+                    OgTypeId = "C"
+                },
+                new Character
+                {
+                    CharacterId = 66,
+                    Name = "Megan " + '"' + "Meg" + '"' + " Acorn",
+                    Year = 2003,
+                    Origin = "Sonic the Hedgehog #121",
+                    OgTypeId = "C"
+                },
+                new Character
+                {
+                    CharacterId = 67,
+                    Name = "Alexis Acorn",
+                    Year = 2003,
+                    Origin = "Sonic the Hedgehog #121",
+                    OgTypeId = "C"
+                },
+                new Character
+                {
+                    CharacterId = 68,
+                    Name = "Joss",
+                    Year = 2003,
+                    Origin = "Sonic the Hedgehog #121",
+                    OgTypeId = "C"
+                },
+                new Character
+                {
+                    CharacterId = 69,
+                    Name = "Horizont-Al",
+                    Year = 1992,
+                    Origin = "Sonic the Hedgehog #2",
+                    OgTypeId = "C"
                 }
             );
         }
