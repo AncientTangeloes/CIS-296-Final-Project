@@ -1,0 +1,35 @@
+﻿@model List<Character>
+@{
+    ViewBag.Title = "Sonic Characters";
+}
+
+<table class="table table-sm table-success table-striped">
+    <thead>
+        <tr>
+            <th><a asp-action="Anime" asp-route-id="1">Name</a></th>
+            <th><a asp-action="Anime" asp-route-id="2">Origin</a></th>
+            <th>Medium</th>
+            <th><a asp-action="Anime" asp-route-id="3">Year</a></th>
+            <th><a asp-action="Anime" asp-route-id="0">Default Sort</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var character in Model)
+        {
+            <tr>
+                <td>@character.Name</td>
+                <td>@character.Origin</td>
+                <td>@character.OgType.Name</td>
+                <td>@character.Year</td>
+                <td>
+                    <a asp-controller="Character" asp-action="Edit" asp-route-id="@character.CharacterId" asp-route-slug="@character.Slug"
+                       class="btn btn-primary">Edit</a>
+                    <a asp-controller="Character" asp-action="Delete" asp-route-id="@character.CharacterId" asp-route-slug="@character.Slug"
+                       class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<a asp-controller="Character" asp-action="Add" class="btn btn-info" style="color:midnightblue">Add New Character</a>
