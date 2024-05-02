@@ -3,12 +3,12 @@
     ViewBag.Title = "Sonic Characters";
 }
 
-<table class="table table-info table-striped" style="color: teal">
+<table class="table table-sm table-success table-striped" style="color:midnightblue">
     <thead>
         <tr>
             <th>Name</th>
             <th>Origin</th>
-            <th>Origin Type</th>
+            <th>Medium</th>
             <th>Year</th>
             <th></th>
         </tr>
@@ -24,7 +24,7 @@
                 <td>
                     <a asp-controller="Character" asp-action="Edit" asp-route-id="@character.CharacterId" asp-route-slug="@character.Slug" 
                         class="btn btn-primary">Edit</a>
-                    <a asp-controller="Game" asp-action="Delete" asp-route-id="@character.CharacterId" asp-route-slug="@character.Slug" 
+                    <a asp-controller="Character" asp-action="Delete" asp-route-id="@character.CharacterId" asp-route-slug="@character.Slug" 
                         class="btn btn-danger">Delete</a>
                 </td>
             </tr>

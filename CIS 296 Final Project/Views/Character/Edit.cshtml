@@ -4,9 +4,9 @@
     ViewBag.Title = title;
 }
 
-<h2 style="color: sandybrown">@ViewBag.Title</h2>
+<h2>@ViewBag.Title</h2>
 
-<form asp-action="Edit" method="post" style="color: sandybrown; font-weight: bold">
+<form asp-action="Edit" method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
 
     <div class="form-group">
@@ -37,6 +37,7 @@
 
     <input type="hidden" asp-for="CharacterId" />
 
+    <br />
     <button type="submit" class="btn btn-info">@ViewBag.Action</button>
     <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>

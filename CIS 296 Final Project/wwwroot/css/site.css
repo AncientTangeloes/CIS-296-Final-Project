@@ -18,5 +18,21 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: lightcyan;
+}
+
+header {
+    background-color: tomato;
+    color: gold;
+    text-align: center;
+}
+
+h2, h4 {
+    color: midnightblue;
+}
+
+form {
+    color: midnightblue;
+    font-weight: bold;
 }

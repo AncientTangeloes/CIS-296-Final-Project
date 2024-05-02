@@ -17,7 +17,7 @@ namespace CharacterList.Controllers
 
         public IActionResult Index()
         {
-            var characters = context.Characters.Include(m => m.OgType).OrderBy(m => m.Name).ToList();
+            var characters = context.Characters.Include(m => m.OgType).OrderBy(m => m.CharacterId).ToList();
             return View(characters);
         }
     }
